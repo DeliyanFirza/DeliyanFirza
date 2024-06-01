@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Penjualan Barang</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <nav>
+        <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">PROJECT 1</a></li>
+                    <li><a href="index1.html">PROJECT 2</a></li>
+                    
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="panel">
+            <div class="title">NOTA PENJUALAN BARANG</div>
+            <div class="frm">
+                <div class="tabel1"></div>
+                <div class="kode" id="kode">Kode Barang</div>
+                <div class="kolomcontrol"><input id="code" type="text" class="textboxc" autofocus="autofocus"></div>
+                <div class="bersih"></div>
+                <div class="nama" id="nama">Nama Barang</div>
+                <div class="kolomcontrol"><input id="name" type="text" class="textboxn" autofocus="autofocus"></div>
+                <div class="bersih"></div>
+                <div class="jumlah" id="jumlah">Jumlah Barang</div>
+                <div class="kolomcontrol"><input id="total" type="text" class="textboxt" value="0"></div>
+                <div class="bersih"></div>
+                <div class="harga" id="harga">Harga</div>
+                <div class="kolomcontrol"><input id="price" type="text" class="textboxp" value="0"></div>
+                <div class="bersih"></div>
+
+            </div>
+            <div class="tabel2">
+                <div class="kolomlabel">Sub Total</div>
+                <div class="kolomcontrol"><input id="sub" type="text" class="textboxOUT" value="Rp 0,-" disabled></div>
+                <div class="bersih"></div>
+                <div class="kolomlabel">Diskon</div>
+                <div class="kolomcontrol"><input id="discount" type="text" class="textboxOUT" value="0%" disabled></div>
+                <div class="bersih"></div>
+                <div class="kolomlabel">Nilai Diskon</div>
+                <div class="kolomcontrol"><input id="nDiscount" type="text" class="textboxOUT" value="Rp 0,-" disabled></div>
+                <div class="bersih"></div>
+                <div class="kolomlabel">Total Bayar</div>
+                <div class="kolomcontrol"><input id="pay" type="text" class="textboxOUT" value="Rp 0,-" disabled></div>
+                <div class="bersih"></div>
+            </div>
+            <div class="bersih"></div>
+            <div class="buttonn">
+                <div class="buttonCP">
+                    <button id="cancle" onclick="window.location.reload()" class="cancle" title="klik untuk batal">
+                    <i class="fa-solid fa-ban"></i>
+                    Batal
+                    </button>
+                </div>
+                <div class="buttonCP">
+                    <button id="payment" onclick="payment()" class="pay" title="klik untuk bayar">
+                    <i class="fa-solid fa-money-check"></i>
+                    Bayar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

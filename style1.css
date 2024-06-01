@@ -1,0 +1,154 @@
+.menu{
+    text-align: center;
+}
+@font-face {
+    font-family: "BerkshireSwash-Regular";
+    src: url("../fonts/BerkshireSwash-Regular.ttf");
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    height: 100vh;
+    width: 50%;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+.panel {
+    border: 1px #999 solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.title {
+    font-family: "BerkshireSwash-Regular";
+    padding: 10px 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 3px #AFF solid;
+    background-color: #0290bb;
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.frm {
+    background-color: white;
+    
+    color: black;
+}
+
+.kolomlabel {
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.kolomcontrol {
+    margin: 0 0 20px 0;
+}
+
+.nama,
+.jumlah,
+.kode,
+.harga {
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.textboxOUT {
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: black;
+    background-color: rgb(220, 220, 220);
+    border: 1px blanchedalmond solid;
+    box-shadow: inset 2px 2px 2px lightblue, 2px 2px 5px lightblue;
+}
+
+.textboxc,
+.textboxp,
+.textboxt,
+.textboxn {
+    font-size: 16px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: inset 2px 2px 2px lightblue, 2px 2px 2px lightblue;
+    border: 1px solid #ccc;
+}
+
+.textboxc:focus,
+.textboxp:focus,
+.textboxt:focus,
+.textboxn:focus {
+    border: 2px blanchedalmond solid;
+}
+
+.buttonn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttonCP {
+    margin: 5px 20px;
+}
+
+.pay, .cancle {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: inset 0 0 2px black;
+    cursor: pointer;
+}
+
+.pay {
+    border: 2px solid green;
+    color: green;
+}
+
+.pay:hover {
+    background: green;
+    color: white;
+    border: 1px white solid;
+    box-shadow: inset 0 0 15px lemonchiffon;
+}
+
+.cancle {
+    border: 2px solid red;
+    color: red;
+}
+
+.cancle:hover {
+    background: red;
+    color: white;
+    border: 1px white solid;
+    box-shadow: inset 0 0 15px lemonchiffon;
+}
